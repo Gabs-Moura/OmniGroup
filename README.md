@@ -1,4 +1,4 @@
-<h4 align="center"> ![Logo OmniGroup](./images/1.png) </h4>
+<p align="center"> ![Logo OmniGroup](./images/1.png) </p>
 <h4 align="center"> 
     :construction:  Projeto em construção  :construction:
 </h4>

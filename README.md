@@ -1,4 +1,4 @@
-![Logo OmniGroup](C:\Users\labsfiap\Downloads\OmniGrip\images\1.png)
+![Logo OmniGroup](./images/1.png)
 <h4 align="center"> 
     :construction:  Projeto em construção  :construction:
 </h4>

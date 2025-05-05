@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./images/1.png" alt=Logo OmniGroup" width="300"/>
+  <img src="./images/1.png" alt=Logo OmniGroup" width="500"/>
 </p>
 <h4 align="center"> 
     :construction:  Projeto em construção  :construction:

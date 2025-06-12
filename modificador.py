@@ -1,7 +1,7 @@
 import os
 
 # Caminho da pasta onde estão os arquivos .txt
-pasta = '/Users/moura/Downloads/garrafinha_agua/valid/labels'
+pasta = '/Users/moura/Projects/OmniGroup/dataset_omni/coca_cola/test/labels'
 
 for nome_arquivo in os.listdir(pasta):
     if nome_arquivo.endswith('.txt'):
@@ -12,8 +12,8 @@ for nome_arquivo in os.listdir(pasta):
         
         novas_linhas = []
         for linha in linhas:
-            if linha and linha[0] in '123456':
-                nova_linha = '2' + linha[1:]
+            if linha and linha[0] in '123456789':
+                nova_linha = '0' + linha[1:]
             else:
                 nova_linha = linha
             novas_linhas.append(nova_linha)

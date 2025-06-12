@@ -20,7 +20,7 @@ wincap = WindowCapture(size=(800, 600), origin=(offset_x, offset_y))
 # YOLOv8x	640	    53.9	479.1	    3.53	    68.2	257.8
 
 
-model = YOLO("runs/detect/train4/weights/best.pt")
+model = YOLO("runs/detect/train4/weights/best.pt") # alterar para o modelo
 
 track_history = defaultdict(lambda: [])
 seguir = True

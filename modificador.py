@@ -1,7 +1,7 @@
 import os
 
-# Caminho da pasta onde estão os arquivos .txt
-pasta = '/Users/moura/Projects/OmniGroup/dataset_omni/coca_cola/test/labels'
+# Caminho da pasta onde estão os arquivos .txt (labels)
+pasta = '/Users/moura/Projects/OmniGroup/dataset_omni/toddynho/valid/labels' # Altere para o caminho correto
 
 for nome_arquivo in os.listdir(pasta):
     if nome_arquivo.endswith('.txt'):
@@ -12,8 +12,8 @@ for nome_arquivo in os.listdir(pasta):
         
         novas_linhas = []
         for linha in linhas:
-            if linha and linha[0] in '123456789':
-                nova_linha = '0' + linha[1:]
+            if linha and linha[0] in '0123456789':
+                nova_linha = '6' + linha[1:] # Troca o primeiro caractere para '0', ou seja, trocar o número que precisa
             else:
                 nova_linha = linha
             novas_linhas.append(nova_linha)

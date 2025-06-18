@@ -24,7 +24,7 @@ class WindowCapture:
                 "height": self.size[1]
             }
             img = np.array(sct.grab(monitor))
-            img = img[...,:3]  # drop alpha channel
+            img = img[...,:3] 
             img = np.ascontiguousarray(img)
             return img
 

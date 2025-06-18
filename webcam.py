@@ -30,26 +30,21 @@ while True:
         else:
             results = model(img)
 
-        # Process results list
         for result in results:
-            # Visualize the results on the frame
             img = result.plot()
 
             if seguir and deixar_rastro:
                 try:
-                    # Get the boxes and track IDs
                     boxes = result.boxes.xywh.cpu()
                     track_ids = result.boxes.id.int().cpu().tolist()
 
-                    # Plot the tracks
                     for box, track_id in zip(boxes, track_ids):
                         x, y, w, h = box
                         track = track_history[track_id]
                         track.append((float(x), float(y)))  # x, y center point
-                        if len(track) > 30:  # retain 90 tracks for 90 frames
+                        if len(track) > 30: 
                             track.pop(0)
 
-                        # Draw the tracking lines
                         points = np.hstack(track).astype(np.int32).reshape((-1, 1, 2))
                         cv2.polylines(img, [points], isClosed=False, color=(230, 0, 0), thickness=5)
                 except:

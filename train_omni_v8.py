@@ -1,15 +1,9 @@
 from ultralytics import YOLO
 
-# para marcar as imagens
-# https://www.makesense.ai/
-
 def main():
-    # Load a model
-    #model = YOLO("yolov8n.yaml")  # build a new model from scratch
-    model = YOLO("yolov8n.pt")  # load a pretrained model (recommended for training)
+    model = YOLO("yolov8n.pt")
 
-    # Use the model
-    model.train(data="omni.yml", epochs=5)  # train the model
+    model.train(data="omni.yml", epochs=5)  #definir quantas epochs vai ter de treino, quanto mais melhor
     metrics = model.val()
 
 if __name__ == '__main__':

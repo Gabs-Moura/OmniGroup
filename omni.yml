@@ -1,8 +1,8 @@
 # pode ser usado como lista tbm: [path/to/imgs1, path/to/imgs2, ..]
 path: ./  # dataset root dir
-train: [dataset_omni/coca_cola/train, dataset_omni/garrafinha_agua/train]
-val: [dataset_omni/coca_cola/valid, dataset_omni/garrafinha_agua/valid]
-test: [dataset_omni/coca_cola/test, dataset_omni/garrafinha_agua/test]
+train: [dataset_omni/coca_cola/train, dataset_omni/garrafinha_agua/train, dataset_omni/toddynho/train]
+val: [dataset_omni/coca_cola/valid, dataset_omni/garrafinha_agua/valid, dataset_omni/toddynho/valid]
+test: [dataset_omni/coca_cola/test, dataset_omni/garrafinha_agua/test, dataset_omni/toddynho/test]
 
 # Classes
 names:
